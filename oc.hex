@@ -1,0 +1,37 @@
+7F 45 4C 46 # elf magic
+01 # 32-bit
+01 # little-endian
+01 # header version
+00 # abi
+00 # abi version
+00 00 00 00 00 00 00
+02 00 # executable
+03 00 # x86
+01 00 00 00 # elf version
+54 80 04 08 # entry point
+34 00 00 00 # program header offset
+00 00 00 00 # section header offset
+00 00 00 00 # flags
+34 00 # size of the header
+20 00 # size of each program header
+01 00 # number of program headers
+28 00 # size of each section header
+00 00 # number of section headers
+00 00 # index of section header containing section names
+
+01 00 00 00 # loadable
+54 00 00 00 # offset
+54 80 04 08 # vaddr 
+00 00 00 00 # paddr
+1A 00 00 00 # size
+1A 00 00 00 # size in memory
+05 00 00 00 # flags
+00 10 00 00 # align
+
+B8 04 00 00 00 # eax
+BB 01 00 00 00 # ebx
+B9 6C 80 04 08 # ecx
+BA 02 00 00 00 # edx
+CD 80 # int 0x80
+EB E8 # jmp
+79 0A # "y\n"
