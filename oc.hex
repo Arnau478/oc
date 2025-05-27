@@ -29,9 +29,9 @@
 00 10 00 00 # align
 
 B8 04 00 00 00 # eax
-BB 01 00 00 00 # ebx
-B9 6C 80 04 08 # ecx
-BA 02 00 00 00 # edx
+31 DB 43 # ebx
+B9 69 80 04 08 # ecx
+31 D2 42 42 # edx
 CD 80 # int 0x80
-EB E8 # jmp
+EB EB # jmp
 79 0A # "y\n"
